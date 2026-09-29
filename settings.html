@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrack - Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">💰 FinTrack</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="income.html">Income</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="transactions.html">Transactions</a>
+      <a href="budgets.html">Budgets</a>
+      <a href="savings.html">Savings</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html" class="active">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="content">
+    <h1>Settings</h1>
+
+    <!-- Theme Toggle -->
+    <section class="form-card">
+      <h2>Theme</h2>
+      <button id="toggleTheme" class="btn-primary">Toggle Light/Dark</button>
+    </section>
+
+    <!-- Reset Data -->
+    <section class="form-card">
+      <h2>Reset Data</h2>
+      <button id="resetData" class="btn-danger">Clear All Data</button>
+    </section>
+  </main>
+
+  <script src="js/settings.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

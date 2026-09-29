@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrack - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">💰 FinTrack</div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="income.html">Income</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="transactions.html">Transactions</a>
+      <a href="budgets.html">Budgets</a>
+      <a href="savings.html">Savings</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="content">
+    <h1>Dashboard</h1>
+
+    <!-- Summary Cards -->
+    <div class="cards">
+      <div class="card">Income: <span id="income">₹0</span></div>
+      <div class="card">Expenses: <span id="expenses">₹0</span></div>
+      <div class="card">Balance: <span id="balance">₹0</span></div>
+      <div class="card">Savings Potential: <span id="savings">₹0</span></div>
+    </div>
+
+    <!-- Charts -->
+    <section class="chart-section">
+      <h2>Income vs Expenses</h2>
+      <canvas id="incomeExpenseChart"></canvas>
+    </section>
+
+    <section class="chart-section">
+      <h2>Expenses by Category</h2>
+      <canvas id="categoryChart"></canvas>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
